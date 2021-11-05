@@ -22,7 +22,7 @@ s.post(url0, data=Form_data, headers=headers)
 
 # Way 1：to creat a URL list with all the pages in.
 URL = []
-for week in range(5,6):
+for week in range(7,8):
     url2 = 'http://211.71.70.68/admin/weekappointment/{}/'.format(week)
     r2 = s.get(url2).text
     bs = BeautifulSoup(r2, "html.parser")
